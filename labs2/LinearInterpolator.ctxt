@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LinearInterpolator()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ LinearInterpolator\r\n\ This\ is\ a\ comment\ added\ by\ Kevin\r\n
+comment1.params=
+comment1.target=float\ getStart()
+comment1.text=\r\n\ this\ is\ a\ accessor\ method\ (getter)\ that\ return\ the\ start\ field\r\n
+comment2.params=
+comment2.target=float\ getInbetween()
+comment2.text=\r\n\ this\ is\ a\ accessor\ method\ (getter)\ that\ return\ the\ inbetween\ field\r\n
+comment3.params=
+comment3.target=float\ getEnd()
+comment3.text=\r\n\ this\ is\ a\ accessor\ method\ (setter)\ that\ return\ the\ end\ field\r\n
+comment4.params=start
+comment4.target=void\ setStart(float)
+comment4.text=\r\n\ this\ is\ a\ mutator\ method\ (setter)\ setting\ the\ value\ of\ start\r\n
+comment5.params=End
+comment5.target=void\ setEnd(float)
+comment5.text=\r\n\ this\ is\ a\ mutator\ method\ (setter)\ setting\ the\ value\ of\ end\r\n
+comment6.params=interpParam
+comment6.target=void\ interpolate(float)
+comment6.text=\r\n\ this\ method\ creates\ the\ variable\ of\ inbetween\r\n
+numComments=7
