@@ -16,16 +16,16 @@ public class Test
      */
     public Test()
     {
-        // initialise instance variables
-        LinearInterpolator linIntrpA = new LinearInterpolator();
-        LinearInterpolator linIntrpB = new LinearInterpolator();
+        // initialise instance variables to creat an object under each variable
+        linIntrpA = new LinearInterpolator();
+        linIntrpB = new LinearInterpolator();
     }
     
     /*
      * Test method for interpolate method in class LinearInterpolator
      */    
     public float interpolationTest(float interpParam)
-    {
+    {   
         float value;
         linIntrpB.interpolate(interpParam);
         value = linIntrpB.getInbetween();
@@ -43,10 +43,9 @@ public class Test
      */    
     public void referenceTest(float interParam)
     {     
-        LinearInterpolator linIntrpA = linIntrpB; // assign linIterpA into linIterpB
+        linIntrpB = linIntrpA; // assign linIterpA into linIterpB
         linIntrpB.interpolate(interParam); // Call the interpolator method in linIterpB
-        System.out.println(linIntrpB.getInbetween()); // then use the command System.out.println(...) to print the value of the inbetween field in linInterpB.
-        // The dots in System.out.println(...) indicates where you should put the call of the accessor method for the inbetween field.
-        System.out.println(linIntrpA.getInbetween()); // Print also the value of inbetween in linInterpA.
+        System.out.println(linIntrpB.getInbetween());
+        System.out.println(linIntrpA.getInbetween()); 
     }
 }

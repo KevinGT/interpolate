@@ -1,6 +1,8 @@
 
 /**
- * Write a description of class LinearInterpolator here.
+ * The LinearInterpolator Class is written as an example class demonstrating instance variables,
+ * the constructor, accessor(getter) and mutator(setter) methods, and finally the interpolation
+ * method in order to change the value of variabl inbetween.
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -19,9 +21,9 @@ public class LinearInterpolator
     public LinearInterpolator()
     {
         // initialise instance variables
-        float start = 0;
-        float end = 100;
-        float inbetween = 0;
+        start = 0;
+        end = 100;
+        inbetween = 0;
     }
 
     /*
@@ -59,7 +61,7 @@ public class LinearInterpolator
      /*
      * this is a mutator method (setter) setting the value of end
      */
-    public void setEnd(float End)
+    public void setEnd(float end)
     {
         this.end = end;
     }  
