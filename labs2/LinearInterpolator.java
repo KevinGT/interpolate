@@ -55,7 +55,12 @@ public class LinearInterpolator
      */
     public void setStart(float start)
     {
-        this.start = start;
+        if(start > end)
+        {
+            System.out.println("Error: Start cannot be larger than End");
+        } else {
+            this.start = start;
+        }
     }
     
      /*
@@ -63,7 +68,12 @@ public class LinearInterpolator
      */
     public void setEnd(float end)
     {
-        this.end = end;
+        if(end < start)
+        {
+            System.out.println("Error: End cannot be smaller than Start");
+        } else {
+            this.end = end;
+        }
     }  
     
      /*
@@ -71,7 +81,12 @@ public class LinearInterpolator
      */
     public void interpolate(float interpParam)
     {
-        float product = end * interpParam;
-        inbetween = product + start;
+        if (interpParam < 0 || interpParam > 1)
+        {
+            System.out.println("Error: interpParam must be a value between 0 and 1");
+        } else {
+            float product = end * interpParam;
+            inbetween = product + start;
+        }
     }
 }
