@@ -1,6 +1,6 @@
 
 /**
- * The class test is written in order to test the interpolate method from the LinearIntopolator Class
+ * The class test is written in order to test the interpolate method from the LinearInterpolator Class
  * 
  * @author - Kevin Talbot
  * @version (version 1.0 - 21st May 2015)
@@ -43,6 +43,8 @@ public class Test
      */    
     public void referenceTest(float interParam)
     {     
+        float intrpBValue = linIntrpB.getEnd();
+        System.out.println(intrpBValue);
         linIntrpB = linIntrpA; // assign linIterpA into linIterpB
         linIntrpB.interpolate(interParam); // Call the interpolator method in linIterpB
         System.out.println(linIntrpB.getInbetween());
